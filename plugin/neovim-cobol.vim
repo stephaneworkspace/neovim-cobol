@@ -46,7 +46,6 @@ endfunction
 
 call s:connect()
 
-" copy paste this
 :function TexteCobol()
 	let _type_texte = input('Insert standard of texte: 0: TEXTE-..., 1: RAPP-..., 2: CSV-..., empty: go to next step: ')
 	let _texte_cobol = ''

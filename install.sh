@@ -22,17 +22,17 @@ download() {
 
 
 fetch_prebuilt_binary() {
-    #echo "Downloading binary.."
-    #url=https://github.com/stephaneworkspace/$name/releases/download/$version/${1}
-    #echo $url
-    #mkdir -p target/release
+    echo "Downloading binary.."
+    url=https://github.com/stephaneworkspace/$name/releases/download/$version/${1}
+    echo $url
+    mkdir -p target/release
 
-    #if (download "$url"); then
-    #    chmod a+x target/release/nvim-spotify
-    #    return
-    #else
+    if (download "$url"); then
+        chmod a+x target/release/nvim-spotify
+        return
+    else
         cargo_build || echo "Prebuilt binaries are not ready for this platform."
-    #fi
+    fi
 }
 
 arch=$(uname)
