@@ -35,8 +35,10 @@ fetch_prebuilt_binary() {
     fi
 }
 
-arch=$(uname)
-case "${arch}" in
-    "Darwin") fetch_prebuilt_binary $name-$version-darwin ;;
-    *) echo "No pre-built binary available for ${arch}."; cargo_build ;;
-esac
+#arch=$(uname)
+#case "${arch}" in
+#    "Darwin") fetch_prebuilt_binary $name-$version-darwin ;;
+#    *) echo "No pre-built binary available for ${arch}."; cargo_build ;;
+#esac
+
+cargo_build
