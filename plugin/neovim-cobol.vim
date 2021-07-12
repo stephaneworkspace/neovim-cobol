@@ -69,6 +69,6 @@ call s:connect()
 	let texte_f = input('Insert french text of '.toupper(_texte_cobol).': ')
 	let texte_d = input('Insert german text of '.toupper(_texte_cobol).' (french: '.texte_f.'): ')
 	let [ bufnum, lnum, column, off ] = getpos('.')
-	let serialized = json_encode({'buffer': bufnum, 'var_def': toupper(_texte_cobol), 'texte_f': texte_f, 'texte_d': texte_d})
+	let serialized = json_encode({'buffer': bufnum, 'line': lnum, 'var_def': toupper(_texte_cobol), 'texte_f': texte_f, 'texte_d': texte_d})
 	:WriteWorkingTexteFD serialized
 :endfunction
