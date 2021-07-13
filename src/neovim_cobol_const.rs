@@ -1,0 +1,9 @@
+pub const COBOL_COMMENT_TEXT: &str = "    *    ";
+pub const TEMPLATE_PATH: &str = "/Users/electryps/Code/tpl/";
+pub const TEMPLATE_DECORATOR_NAME: &str = "@neovim-cobol name";
+pub const TEMPLATE_DECORATOR_SEL: &str = "@neovim-cobol sel";
+pub const TEMPLATE_DECORATOR_COP: &str = "@neovim-cobol cop";
+pub const TEMPLATE_DECORATOR_STATUS_BEGIN: &str = "@neovim-cobol status begin";
+pub const TEMPLATE_DECORATOR_STATUS_END: &str = "@neovim-cobol status end";
+pub const TEMPLATE_DECORATOR_OPEN_BEGIN: &str = "@neovim-cobol open begin";
+pub const TEMPLATE_DECORATOR_OPEN_END: &str = "@neovim-cobol open end";

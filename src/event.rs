@@ -1,12 +1,11 @@
 mod t_neo_vim;
 mod t_texte_fd;
+mod t_tpl;
 
 use crate::event::t_texte_fd::TTexteFd;
 use crate::{Messages, NeoVimCobol};
 use log::*;
-use neovim_lib::neovim_api::Buffer;
-use neovim_lib::{CallError, Neovim, NeovimApi, Session, Value};
-use std::slice::Iter;
+use neovim_lib::{Neovim, NeovimApi, Session};
 
 pub struct EventHandler {
     nvim: Neovim,
